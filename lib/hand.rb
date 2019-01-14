@@ -38,6 +38,8 @@ class Hand
   end
 
   def value
+    return [0, 0, 0, 0, 5, 4, 3, 2, 1] if wraparound_straight?
+
     four_rank = 0
     three_rank = 0
     pairs = []
